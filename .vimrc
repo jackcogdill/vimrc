@@ -41,6 +41,9 @@ let g:rainbow_active = 1
 set number
 " Enable cursor line
 set cursorline
+if has('termguicolors')
+    set termguicolors
+endif
 " }}
 
 " Python syntax
