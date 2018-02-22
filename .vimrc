@@ -11,13 +11,15 @@ Plug 'othree/yajs.vim'
 " }}
 
 " Editing {{
-" Multiple cursors like sublime
-" Plug 'terryma/vim-multiple-cursors'
 " Parentheses autocomplete
 Plug 'Raimondi/delimitMate'
 " Whitespace plugin
 Plug 'ntpeters/vim-better-whitespace'
 " }}
+
+" Status bar
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Palenight color scheme
 Plug 'jackcogdill/palenight.vim'
@@ -48,6 +50,15 @@ endif
 
 " Python syntax
 let python_highlight_all = 1
+
+" Airline config {{
+let g:airline#extensions#tabline#enabled = 1
+" }}
+
+" Airline theme config {{
+let g:airline_theme='base16_shell'
+let g:airline_powerline_fonts = 1 " Powerline symbols
+" }}
 
 " Smart case
 set ignorecase
