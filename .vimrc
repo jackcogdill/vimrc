@@ -47,6 +47,8 @@ let g:rainbow_conf = {
 set number
 " Enable cursor line
 set cursorline
+" Enable highlighting search matches
+set hlsearch
 " Color depending on truecolor support
 if has('termguicolors')
     set termguicolors
@@ -63,7 +65,7 @@ let python_highlight_all = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1 " Powerline symbols
 " }}
-"
+
 " Smart case
 set ignorecase
 set smartcase
