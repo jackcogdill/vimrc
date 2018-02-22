@@ -73,3 +73,6 @@ set smartcase
 " Tab is 4 spaces
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
+" Hit Esc twice to remove search highlighting from previous search
+nnoremap <silent> <Esc><Esc> :noh<CR>
+
