@@ -47,8 +47,12 @@ let g:rainbow_conf = {
 set number
 " Enable cursor line
 set cursorline
+" Color depending on truecolor support
 if has('termguicolors')
     set termguicolors
+    let g:airline_theme='base16_shell'
+else
+    let g:airline_theme='onedark'
 endif
 " }}
 
@@ -57,13 +61,9 @@ let python_highlight_all = 1
 
 " Airline config {{
 let g:airline#extensions#tabline#enabled = 1
-" }}
-
-" Airline theme config {{
-let g:airline_theme='base16_shell'
 let g:airline_powerline_fonts = 1 " Powerline symbols
 " }}
-
+"
 " Smart case
 set ignorecase
 set smartcase
