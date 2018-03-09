@@ -56,6 +56,7 @@ if has('termguicolors')
 else
     let g:airline_theme='onedark'
 endif
+set showcmd " Show (partial) command in the last line of the screen
 " }}
 
 " Python syntax
